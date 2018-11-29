@@ -1,0 +1,1 @@
+Intention of this project to write most of the data structures and algorithms
