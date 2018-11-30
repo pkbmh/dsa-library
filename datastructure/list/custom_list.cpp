@@ -44,6 +44,21 @@ void custom_list<T>::insert(T data) {
 }
 
 template <class T>
+void custom_list<T>::insertFront(T data) {
+    list_node<T>*tmp = list_node<T>::new_node(data);
+    if(head == null) {
+        head = tmp;
+        tail = tmp;
+    }
+    else {
+        head->prev = tmp;
+        tmp->next = head;
+        head = tmp;
+    }
+    size++;
+}
+
+template <class T>
 bool custom_list<T>::deleteHead() {
     if(head == null) return false;
     if(head == tail) {

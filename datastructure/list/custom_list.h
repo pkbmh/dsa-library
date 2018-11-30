@@ -30,6 +30,7 @@ public:
     list_node<T> * getTail();
     list_node<T> *find(T data);
     void insert(T data);
+    void insertFront(T data);
     bool deleteHead();
     bool deleteTail();
     bool deleteNode(list_node<T> *node);

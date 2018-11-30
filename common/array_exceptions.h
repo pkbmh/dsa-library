@@ -2,9 +2,6 @@
 // Created by Pankaj Birat on 28/11/18.
 //
 
-#ifndef SPOJ_EXCEPTIONS_H
-#define SPOJ_EXCEPTIONS_H
-
 #include "../common/headers.h"
 
 class array_index_out_of_bound : public runtime_error
@@ -27,5 +24,3 @@ public:
         return runtime_error::what();
     };
 };
-
-#endif //SPOJ_EXCEPTIONS_H

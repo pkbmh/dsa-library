@@ -2,8 +2,6 @@
 // Created by Pankaj Birat on 28/11/18.
 //
 
-#ifndef SPOJ_CUSTOM_ARRAY_H
-#define SPOJ_CUSTOM_ARRAY_H
 
 #include "../../common/headers.h"
 #include "../../common/array_exceptions.h"
@@ -67,6 +65,3 @@ public:
         arr.shrink_to_fit();
     }
 };
-
-
-#endif //SPOJ_CUSTOM_ARRAY_H

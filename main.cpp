@@ -3,6 +3,9 @@
 //#include "test/algorithms/lru_cache_test.cpp"
 //#include "test/datastructure/stack/stack_test.cpp"
 //#include "test/datastructure/queue/queue_test.cpp"
+//#include "test/datastructure/tree/binary_search_tree_test.cpp"
+//#include "test/datastructure/tree/avl_tree_test.cpp"
+
 
 int main() {
 
@@ -22,3 +25,9 @@ int main() {
 
 //    queue_test queueTest;
 //    queueTest.test();
+
+//    binary_search_tree_test binarySearchTreeTest;
+//    binarySearchTreeTest.test();
+
+//    avl_tree_test avlTreeTest;
+//    avlTreeTest.test();

@@ -2,8 +2,6 @@
 // Created by Pankaj Birat on 28/11/18.
 //
 
-#ifndef SPOJ_CONTAINER_TEST_H
-#define SPOJ_CONTAINER_TEST_H
 
 #include <iostream>
 #include <set>
@@ -63,4 +61,3 @@ public:
 };
 
 
-#endif //SPOJ_CONTAINER_TEST_H
