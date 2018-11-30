@@ -19,7 +19,10 @@ public:
         }
         assert(mx == binarySearchTree.getMax().F);
         assert(mn == binarySearchTree.getMin().F);
-        cout << binarySearchTree.getMax() << endl;
-        cout << binarySearchTree.getMin() << endl;
+        cout << "max : " << binarySearchTree.getMax() << endl;
+        cout << "min : " << binarySearchTree.getMin() << endl;
+
+        cout << "Inorder traversal" << endl;
+        binarySearchTree.printInOrder();
     }
 };

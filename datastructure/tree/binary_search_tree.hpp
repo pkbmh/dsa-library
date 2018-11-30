@@ -5,14 +5,14 @@
 #ifndef DSA_BINARY_SEARCH_TREE_H
 #define DSA_BINARY_SEARCH_TREE_H
 
-#include "tree_traverser.cpp"
+#include "binary_tree_traverser.cpp"
 
 template <class K, class V>
 class binary_search_tree {
 
 private:
     tree_node<K,V> * root;
-    tree_traverser<K,V> treeTraverser;
+    binary_tree_traverser<K,V> treeTraverser;
     pair<K,V> DUMMY_KV_PAIR;
 public:
     binary_search_tree(){

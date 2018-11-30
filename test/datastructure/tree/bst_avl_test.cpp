@@ -2,13 +2,13 @@
 // Created by Pankaj Birat on 30/11/18.
 //
 
-#include "../../../datastructure/tree/avl_tree.cpp"
+#include "../../../datastructure/tree/bst_avl.cpp"
 #include "../../../common/common_functions.h"
 
-class avl_tree_test {
+class bst_avl_test {
 public:
     void test() {
-        binary_search_tree<long, int> *avlTree = new avl_tree<long,int>();
+        binary_search_tree<long, int> *avlTree = new bst_avl<long,int>();
         long mx = 0;
         long mn = LONG_MAX;
 
@@ -17,11 +17,13 @@ public:
         }
         mx = 19;
         mn = 0;
-        cout << avlTree->getMax() << endl;
-        cout << avlTree->getMin() << endl;
+
+        cout << "max : " <<  avlTree->getMax() << endl;
+        cout << "min : " << avlTree->getMin() << endl;
         assert(mx == avlTree->getMax().F);
         assert(mn == avlTree->getMin().F);
 
+        cout << "Inorder traversal" << endl;
         avlTree->printInOrder();
 
     }

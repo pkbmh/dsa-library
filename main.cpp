@@ -4,11 +4,10 @@
 //#include "test/datastructure/stack/stack_test.cpp"
 //#include "test/datastructure/queue/queue_test.cpp"
 //#include "test/datastructure/tree/binary_search_tree_test.cpp"
-//#include "test/datastructure/tree/avl_tree_test.cpp"
+//#include "test/datastructure/tree/bst_avl_test.cpp"
 
 
 int main() {
-
 }
 
 //    custom_array_test customArrayTest;
@@ -29,5 +28,5 @@ int main() {
 //    binary_search_tree_test binarySearchTreeTest;
 //    binarySearchTreeTest.test();
 
-//    avl_tree_test avlTreeTest;
+//    bst_avl_test avlTreeTest;
 //    avlTreeTest.test();

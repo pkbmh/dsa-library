@@ -6,13 +6,13 @@
 #include "binary_tree_rotator.cpp"
 
 template <class K, class V>
-class avl_tree : public binary_search_tree<K,V> {
+class bst_avl : public binary_search_tree<K,V> {
 private:
     tree_node<K,V>* insert(tree_node<K,V> * node, K key, V value);
 };
 
 template <class K, class V>
-tree_node<K,V>* avl_tree<K,V>::insert(tree_node<K, V> *node, K key, V value) {
+tree_node<K,V>* bst_avl<K,V>::insert(tree_node<K, V> *node, K key, V value) {
     node = binary_search_tree<K,V>::insert(node, key, value);
     int height_diff = tree_node<K,V>::getNodeHeight(node->left) - tree_node<K,V>::getNodeHeight(node->right);
 
