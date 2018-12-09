@@ -62,3 +62,55 @@ tree_node<K,V>* binary_search_tree<K,V>::insert(tree_node<K,V> * node, K key, V 
     tree_node<K, V>::size_height_reset(node);
     return node;
 }
+
+template <class K, class V>
+pair<K, V> binary_search_tree<K,V>::find(K key) {
+    tree_node<K,V> *ptr = root;
+    while(ptr != null) {
+        if(ptr->key == key) return {ptr->key, ptr->data};
+        if(ptr->key > key) ptr = ptr->left;
+        else if(ptr->key < key) ptr = ptr->right;
+    }
+    return DUMMY_KV_PAIR;
+}
+template <class K, class V>
+pair<K, V> binary_search_tree<K,V>::ceil(K key) {
+    tree_node<K,V> *ptr = root;
+    tree_node<K,V> *ans = null;
+    while(ptr != null) {
+        if(ptr->key == key) {ans = ptr; break;}
+        if(ptr->key > key) {ans = ptr; ptr = ptr->left;}
+        else if(ptr->key < key) ptr = ptr->right;
+    }
+    return (ans == null) ? DUMMY_KV_PAIR : MP(ans->key, ans->data);
+}
+
+template <class K, class V>
+pair<K, V> binary_search_tree<K,V>::floor(K key) {
+    tree_node<K,V> *ptr = root;
+    tree_node<K,V> *ans = null;
+    while(ptr != null) {
+        if(ptr->key == key) {ans = ptr; break;}
+        if(ptr->key > key) {ptr = ptr->left;}
+        else if(ptr->key < key) {ans = ptr; ptr = ptr->right;}
+    }
+    return (ans == null) ? DUMMY_KV_PAIR : MP(ans->key, ans->data);
+}
+
+template <class K, class V>
+vector<pair<K,V> > binary_search_tree<K,V>::getInRange(K left, K right) {
+    vector<pair<K,V> >result;
+    getInRange(root, left, right, result);
+    return result;
+}
+
+template <class K, class V>
+vector<pair<K,V> > binary_search_tree<K,V>::getInRange(tree_node<K,V> *node, K left, K right, vector<pair<K,V> > &result){
+    if(node == null) return ;
+    if(node->key > right) getInRange(node->left, left, right, result);
+    else if(node->key < left) getInRange(node->right, left, right, result);
+    else {
+        getInRange(node->left, left, right, result);
+        getInRange(node->right, left, right, result);
+    }
+}
