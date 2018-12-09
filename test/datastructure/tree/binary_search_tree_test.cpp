@@ -2,7 +2,7 @@
 // Created by Pankaj Birat on 29/11/18.
 //
 #include "../../../datastructure/tree/binary_search_tree.cpp"
-#include "../../../common/common_functions.h"
+#include "../../../common/common_functions.hpp"
 
 class binary_search_tree_test {
 public:

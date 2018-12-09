@@ -3,7 +3,7 @@
 //
 
 #include "../../../datastructure/tree/bst_avl.cpp"
-#include "../../../common/common_functions.h"
+#include "../../../common/common_functions.hpp"
 
 class bst_avl_test {
 public:

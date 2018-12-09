@@ -1,7 +1,7 @@
 //
 // Created by Pankaj Birat on 28/11/18.
 //
-#include "../../../datastructure/array/custom_array.h"
+#include "../../../datastructure/array/custom_array.hpp"
 
 class custom_array_test {
 public:

@@ -1,7 +1,7 @@
 //
 // Created by Pankaj Birat on 28/11/18.
 //
-#include "custom_list.h"
+#include "custom_list.hpp"
 
 template <class T>
 list_node<T>* custom_list<T>::getHead() {

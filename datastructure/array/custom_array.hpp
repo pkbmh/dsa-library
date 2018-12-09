@@ -3,8 +3,8 @@
 //
 
 
-#include "../../common/headers.h"
-#include "../../common/array_exceptions.h"
+#include "../../common/headers.hpp"
+#include "../../common/array_exceptions.hpp"
 
 template<class T>
 class custom_array{

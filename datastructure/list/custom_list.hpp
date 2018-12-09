@@ -7,11 +7,11 @@
 
 #endif //DSA_LIST_H
 
-#include "../../common/headers.h"
-#include "../../common/common_functions.h"
-#include "../../common/list_exceptions.h"
+#include "../../common/headers.hpp"
+#include "../../common/common_functions.hpp"
+#include "../../common/list_exceptions.hpp"
 #include "list_iterator.cpp"
-#include "../printable.h"
+#include "../printable.hpp"
 
 template <class T>
 class custom_list : public printable<T>{

@@ -2,7 +2,7 @@
 // Created by Pankaj Birat on 28/11/18.
 //
 
-#include "../common/headers.h"
+#include "headers.hpp"
 #ifndef DSA_COMMON_FUNCTIONS_H
 #define DSA_COMMON_FUNCTIONS_H
 
