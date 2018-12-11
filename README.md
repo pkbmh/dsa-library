@@ -1,5 +1,5 @@
 # DSA-library
-Generic implementation of most common data structure and algorithms
+Generic implementation of most common data structures and algorithms in C++
 
 ### Data Structures
 ### Array
@@ -9,3 +9,5 @@ Generic implementation of most common data structure and algorithms
 ### Tree
 *   [Binary Search Tree](https://github.com/pkbmh/dsa-library/blob/master/datastructure/tree/binary_search_tree.hpp) [Test/Example](https://github.com/pkbmh/dsa-library/blob/master/test/datastructure/tree/binary_search_tree_test.cpp)
 *   [AVL Tree](https://github.com/pkbmh/dsa-library/blob/master/datastructure/tree/bst_avl.cpp) [Test/Example](https://github.com/pkbmh/dsa-library/blob/master/test/datastructure/tree/bst_avl_test.cpp)
+### Range query
+*   [Sparse Table](https://github.com/pkbmh/dsa-library/blob/master/datastructure/range-query/sparse_table.hpp) [Test/Example](https://github.com/pkbmh/dsa-library/blob/master/test/datastructure/range-query/sparse_table_test.cpp)

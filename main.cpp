@@ -6,6 +6,9 @@
 //#include "test/datastructure/tree/binary_search_tree_test.cpp"
 //#include "test/datastructure/tree/bst_avl_test.cpp"
 
+//#include "datastructure/range-query/sparse_table.hpp"
+//#include "test/datastructure/range-query/sparse_table_test.cpp"
+
 
 int main() {
 
@@ -31,3 +34,6 @@ int main() {
 
 //    bst_avl_test avlTreeTest;
 //    avlTreeTest.test();
+
+//sparse_table_test sparseTableTest;
+//sparseTableTest.test();
