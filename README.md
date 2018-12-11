@@ -11,3 +11,4 @@ Generic implementation of most common data structures and algorithms in C++
 *   [AVL Tree](https://github.com/pkbmh/dsa-library/blob/master/datastructure/tree/bst_avl.cpp) [Test/Example](https://github.com/pkbmh/dsa-library/blob/master/test/datastructure/tree/bst_avl_test.cpp)
 ### Range query
 *   [Sparse Table](https://github.com/pkbmh/dsa-library/blob/master/datastructure/range-query/sparse_table.hpp) [Test/Example](https://github.com/pkbmh/dsa-library/blob/master/test/datastructure/range-query/sparse_table_test.cpp)
+*   [Segment Tree](https://github.com/pkbmh/dsa-library/blob/master/datastructure/range-query/segment_tree.hpp) [Test/Example](https://github.com/pkbmh/dsa-library/blob/master/test/datastructure/range-query/segment_tree_test.cpp)
