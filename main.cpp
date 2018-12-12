@@ -11,8 +11,10 @@
 //#include "test/datastructure/range-query/segment_tree_test.cpp"
 //#include "test/datastructure/range-query/binary_index_tree_test.cpp"
 
+//#include "test/datastructure/heap/binary_heap_test.cpp"
 
 int main() {
+
 }
 
 //    custom_array_test customArrayTest;
@@ -36,11 +38,21 @@ int main() {
 //    bst_avl_test avlTreeTest;
 //    avlTreeTest.test();
 
-//sparse_table_test sparseTableTest;
-//sparseTableTest.test();
+/*
+ *
+    sparse_table_test sparseTableTest;
+    sparseTableTest.test();
 
-//segment_tree_test segmentTreeTest;
-//segmentTreeTest.test();
+    segment_tree_test segmentTreeTest;
+    segmentTreeTest.test();
 
-//    binary_index_tree_test binaryIndexTreeTest;
-//    binaryIndexTreeTest.test();
+    binary_index_tree_test binaryIndexTreeTest;
+    binaryIndexTreeTest.test();
+ */
+
+/*
+ * Heap
+    binary_heap_test binaryHeapTest;
+    binaryHeapTest.test();
+
+*/
