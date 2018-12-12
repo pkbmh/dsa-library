@@ -9,6 +9,7 @@
 //#include "datastructure/range-query/sparse_table.hpp"
 //#include "test/datastructure/range-query/sparse_table_test.cpp"
 //#include "test/datastructure/range-query/segment_tree_test.cpp"
+//#include "test/datastructure/range-query/binary_index_tree_test.cpp"
 
 
 int main() {
@@ -40,3 +41,6 @@ int main() {
 
 //segment_tree_test segmentTreeTest;
 //segmentTreeTest.test();
+
+//    binary_index_tree_test binaryIndexTreeTest;
+//    binaryIndexTreeTest.test();
