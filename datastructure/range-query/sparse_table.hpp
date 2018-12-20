@@ -21,7 +21,7 @@
 /**
  *
  * @tparam T data type of underlying container
- * @tparam Comp comparision function which should compare two objects of type T and return 1 if need to keep first argument 0 otherwise
+ * @tparam Comp comparision function which should compare two objects of type T and return one of the parameter which will be the final result
  */
 template <class T>
 class sparse_table {
@@ -29,11 +29,11 @@ private:
     vector<T> arr;
     int **table;
     size_t sz;
-    int (*compareFunction)(T, T);
+    T (*compareFunction)(T, T);
 
 public:
 
-    sparse_table(vector<T> arr, int (*compareFunction)(T, T)) {
+    sparse_table(vector<T> arr, T (*compareFunction)(T, T)) {
         this->arr = arr;
         sz = arr.size();
         this->compareFunction = compareFunction;
@@ -60,13 +60,12 @@ void sparse_table<T>::build() {
     }
     // for length 1 so ans of len 1 starting form i would be i;
 
-    for(int i = 0; i < sz; i++) table[i][0] = i;
+    for(int i = 0; i < sz; i++) table[i][0] = arr[i];
     for(int j = 1; j < lg2; j++) {
         int len = (1<<j);
         int len_b2 = (len >> 1);
         for(int i = 0; i+len <= sz; i++) {
-            int comp_res = compareFunction(arr[table[i][j-1]], arr[table[i+len_b2][j-1]]);
-            table[i][j] = ((comp_res == 1) ? table[i][j-1] : table[i+len_b2][j-1]);
+            table[i][j] = compareFunction(table[i][j-1], table[i+len_b2][j-1]);
         }
     }
 
@@ -84,5 +83,5 @@ T sparse_table<T>::query(int left, int right) {
     assert(right < sz);
     int len = right - left + 1;
     int j = log2(len);
-    return compareFunction(arr[table[left][j]], arr[table[left+len-(1<<j)][j]]) ? arr[table[left][j]] : arr[table[left+len-(1<<j)][j]];
+    return compareFunction(table[left][j], table[left+len-(1<<j)][j]);
 }

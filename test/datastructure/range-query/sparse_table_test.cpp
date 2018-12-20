@@ -29,6 +29,6 @@ public:
         assert(sparseTable.query(1, 1) == 6);
     }
     static int comp(int a, int b) {
-        return a < b;
+        return a < b ? a : b;
     }
 };
