@@ -7,7 +7,7 @@
 
 #endif //DSA_GRAPH_TRAVERSER_H
 
-#include "graph.hpp"
+#include "unweighted_graph.hpp"
 
 template <class T>
 class graph_traverser {

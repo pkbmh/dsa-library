@@ -58,8 +58,7 @@ void sparse_table<T>::build() {
     for(int i = 0; i < sz; i++) {
         table[i] = (int *)malloc(lg2 * sizeof(int));
     }
-    // for length 1 so ans of len 1 starting form i would be i;
-
+    // result of range length 1 starting form i would be arr[i];
     for(int i = 0; i < sz; i++) table[i][0] = arr[i];
     for(int j = 1; j < lg2; j++) {
         int len = (1<<j);
